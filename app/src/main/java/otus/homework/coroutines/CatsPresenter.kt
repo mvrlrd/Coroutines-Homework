@@ -12,7 +12,7 @@ class CatsPresenter(
 
     fun onInitComplete() {
         catsService.getCatFact().enqueue(object : Callback<Fact> {
-
+//hello
             override fun onResponse(call: Call<Fact>, response: Response<Fact>) {
                 if (response.isSuccessful && response.body() != null) {
                     _catsView?.populate(response.body()!!)
